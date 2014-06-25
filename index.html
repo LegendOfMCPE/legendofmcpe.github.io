@@ -3,50 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>index by LegendOfMCPE</title>
+    <title>LegendOfMCPE by LegendOfMCPE</title>
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-
-      <header>
-        <h1>index</h1>
-        <p>Homepage of the organization</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/LegendOfMCPE" class="button fork"><strong>View On GitHub</strong></a>
-      </div><!-- end banner -->
-
     <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
+      <header>
+        <h1>LegendOfMCPE</h1>
+        <p>Homepage of LegendOfMCPE</p>
+        <p class="view"><a href="https://github.com/LegendOfMCPE">View the Project on GitHub <small>LegendOfMCPE</small></a></p>
+        <ul>
+          <li class="single"><a href="https://github.com/LegendOfMCPE/legendofmcpe.github.com">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
       <section>
         <h1>
-<a name="welcome-to-legendsofmcpe-homepage" class="anchor" href="#welcome-to-legendsofmcpe-homepage"><span class="octicon octicon-link"></span></a>Welcome to LegendsOfMCPE homepage!</h1>
+<a name="welcome-to-legendofmcpe-homepage" class="anchor" href="#welcome-to-legendofmcpe-homepage"><span class="octicon octicon-link"></span></a>Welcome to LegendOfMCPE homepage!</h1>
 
 <h2>
-<a name="our-irc-channel" class="anchor" href="#our-irc-channel"><span class="octicon octicon-link"></span></a>Our IRC channel</h2>
+<a name="contact-us" class="anchor" href="#contact-us"><span class="octicon octicon-link"></span></a>Contact us</h2>
+
+<h3>
+<a name="irc-channel" class="anchor" href="#irc-channel"><span class="octicon octicon-link"></span></a>IRC channel</h3>
 
 <div class="highlight highlight-yaml"><pre><span class="l-Scalar-Plain">address</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">irc.freenode.org</span>
 <span class="l-Scalar-Plain">port</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">6667</span>
 <span class="l-Scalar-Plain">channel</span><span class="p-Indicator">:</span> <span class="c1">#LegendOfMCPE</span>
 </pre></div>
 
-<h2>
-<a name="our-forums-account" class="anchor" href="#our-forums-account"><span class="octicon octicon-link"></span></a>Our forums account</h2>
+<h3>
+<a name="our-pocketmine-forums-account" class="anchor" href="#our-pocketmine-forums-account"><span class="octicon octicon-link"></span></a>Our PocketMine Forums account</h3>
 
-<p><code>LegendsOfMCPE</code></p>
+<p><code>LegendsOfMCPE</code>: <a href="http://forums.pocketmine.net/members/.11453/">http://forums.pocketmine.net/members/.11453/</a></p>
 
 <h2>
 <a name="our-projects" class="anchor" href="#our-projects"><span class="octicon octicon-link"></span></a>Our projects</h2>
@@ -62,6 +58,12 @@
 <li>The bot is designed for debugging. It should be able to show debug data visible to a client.</li>
 </ul>
 </li>
+<li>FakeClient-PHP
+
+<ul>
+<li>Same as FakeClient except that it is written in PHP instead of </li>
+</ul>
+</li>
 </ul><h3>
 <a name="pocketmine-mp-zekkou-cake-plugins" class="anchor" href="#pocketmine-mp-zekkou-cake-plugins"><span class="octicon octicon-link"></span></a>PocketMine-MP Zekkou Cake plugins</h3>
 
@@ -70,13 +72,55 @@
 
 <ul>
 <li>A central API for other plugins, used for recording statistics of players and providing APIs like the request API.</li>
-<li>It also has its own functions, such as the player total online time.</li>
+<li>It also has its own commands, such as the player total online time and other statistics.</li>
 <li>Dependency for PocketFactions and PocketRealisticMulti.</li>
+<li>Source: <a href="https://github.com/LegendOfMCPE/StatsCore">https://github.com/LegendOfMCPE/StatsCore</a>
+</li>
 </ul>
 </li>
-<li>xEcon</li>
-<li>PocketFactions</li>
-<li>EssentialsPE</li>
+<li>
+<p>xEcon</p>
+
+<ul>
+<li>An extensive economic plugin</li>
+<li>With an easy API</li>
+<li>Multiple accounts for each player, customizable!</li>
+<li>More types of <em>"economic entities"</em> can be registered by other plugins</li>
+</ul>
+<blockquote>
+<p>"Economic entities" refers to anything that can receive, own and pay money. Traditionally, only players can do that. With xEcon, everything is possible. An example of non-traditional economic entities is factions in PocketFactions.</p>
+</blockquote>
+
+<ul>
+<li>Economic by-products supported, including shops, sell centres, lands, airports, tax, insurance, casino. All in one plugin. Disable with a switch in the config.</li>
+<li>Accounts can be exported into Microsoft Excel (XML spreadsheet 2003) files!</li>
+<li>Source: <a href="https://github.com/LegendOfMCPE/xEcon">https://github.com/LegendOfMCPE/xEcon</a>
+</li>
+</ul>
+</li>
+<li>PocketFactions
+
+<ul>
+<li>Based on the Bukkit plugin <a href="http://dev.bukkit.org/bukkit-plugins/factions/">Factions</a> by <a href="https://github.com/MassiveCraft" class="user-mention">@MassiveCraft</a> (original source <a href="https://github.com/MassiveCraft/Factions">here</a> )</li>
+<li>Allows players to protect their own land whilst an abuse is avoided</li>
+<li>Create a faction with a simple command</li>
+<li>Claim chunks only if you have the money and power to</li>
+<li>Get more members to increase your faction's power</li>
+<li>Get more donations from your members to give your faction ccash</li>
+<li>Awesome convenient permission settings to your faction internals</li>
+<li>Inter-factional relationship supported</li>
+<li>Source: <a href="https://github.com/LegendOfMCPE/PocketFactions">https://github.com/LegendOfMCPE/PocketFactions</a>
+</li>
+</ul>
+</li>
+<li>EssentialsPE
+
+<ul>
+<li>Ports most features from the Bukkit plugin <a href="http://dev.bukkit.org/bukkit-plugins/essentials/">Essentials</a> (original source <a href="https://github.com/essentials/Essentials">here</a> )</li>
+<li>Source: <a href="https://github.com/LegendOfMCPE/EssentailsPE">https://github.com/LegendOfMCPE/EssentailsPE</a>
+</li>
+</ul>
+</li>
 <li>PocketRealisticMulti
 
 <ul>
@@ -86,6 +130,8 @@
 <li>The social module contains permanent death (hardcore pro) and possibly other submodules.</li>
 <li>This plugin has a dependency of StatsCore.</li>
 <li>This plugin aims on pushing MCPE to its maximum realism.</li>
+<li>Source: <a href="https://github.com/LegendOfMCPE/PocketRealisticMulti">https://github.com/LegendOfMCPE/PocketRealisticMulti</a>
+</li>
 </ul>
 </li>
 <li>PixelArt-Image
@@ -94,14 +140,29 @@
 <li>The core generates a PixelArt image shown to a client (selected clients only, without creating a world).</li>
 <li>An add on is to show pictures downloaded from HTTP.</li>
 <li>Another add-on may be a forced captcha to avoid bots.</li>
-</ul>
+<li>Source: <a href="https://github.com/LegendOfMCPE/PixelArt-Image">https://github.com/LegendOfMCPE/PixelArt-Image</a>
 </li>
 </ul>
+</li>
+</ul><h2>
+<a name="our-principles-of-plugin-development" class="anchor" href="#our-principles-of-plugin-development"><span class="octicon octicon-link"></span></a>Our Principles of Plugin Development</h2>
+
+<h3>
+<a name="plugin-compatibility" class="anchor" href="#plugin-compatibility"><span class="octicon octicon-link"></span></a>Plugin compatibility</h3>
+
+<p>We aim to make our plugins compatible to all other plugins. As a result, unless impossible, we will try not to override the features of other plugins. If it is impossible, we will make it possible by using it at our plugins' general API: StatsCore. If a plugin of ours uses a feature that would conflict with other plugins we make, we will update StatsCore so that we won't conflict with ourselves. We would also, if possible, depend on other plugins' databases or APIs to save data, instead of creating more files on your device. For example, PocketRealisticMulti (@LegendOfMCPE/prm) and PocketFactions (@LegendOfMCPE/pocketfactions team) also wants to collect how long the player has been online on the server totally. To avoid wasting your server's precious memory by duplicating saving files, both of these plugins depend on StatsCore to get these statistics.</p>
+
+<p>In order to make StatsCore than just an API, you can get data from StatsCore using the commands too.</p>
+
+<h3>
+<a name="copyright-and-credits" class="anchor" href="#copyright-and-credits"><span class="octicon octicon-link"></span></a>Copyright and Credits</h3>
+
+<p>Some of our plugins, like EssentialsPE (@LegendOfMCPE/EssentialsPE) and PocketFactions (@LegendOfMCPE/PocketFactions team) are based on <a href="http://plugins.bukkit.org">Bukkit (@Bukkit) plugins</a>. We would give credit to the original creator who made the Bukkit version of the plugin plus the link to the release of the Bukkit version, but we would also add some features that we think are suitable into these plugins. For example, in PocketFactions, we have an exclusive feature called "sieging" (can be enabled/disabled by server owner), whereas other factions can claim your chunks if your faction has power overdraft. We will <strong>not</strong> specify these exclusive ideas one by one, but we are here to remind you that we are not 100% copying them. Nevertheless, the credit of the idea's original creator will still be given to them.</p>
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
     </div>
+    <footer>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
