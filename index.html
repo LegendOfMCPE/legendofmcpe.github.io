@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>LegendOfMCPE by LegendOfMCPE</title>
+    <title>LegendOfMCPE</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -68,40 +68,37 @@
 <a name="pocketmine-mp-zekkou-cake-plugins" class="anchor" href="#pocketmine-mp-zekkou-cake-plugins"><span class="octicon octicon-link"></span></a>PocketMine-MP Zekkou Cake plugins</h3>
 
 <ul>
-<li>StatsCore
+<li><a name="StatsCore" class="anchor">StatsCore</a>
 
 <ul>
 <li>A central API for other plugins, used for recording statistics of players and providing APIs like the request API.</li>
 <li>It also has its own commands, such as the player total online time and other statistics.</li>
-<li>Dependency for PocketFactions and PocketRealisticMulti.</li>
+<li>Dependency for <a href="#PocketFactions">PocketFactions</a> and <a href="#PocketRealisticMulti">PocketRealisticMulti</a>.</li>
 <li>Source: <a href="https://github.com/LegendOfMCPE/StatsCore">https://github.com/LegendOfMCPE/StatsCore</a>
 </li>
 </ul>
 </li>
 <li>
-<p>xEcon</p>
+<p><a name="xEcon" class="anchor">xEcon</a></p>
 
 <ul>
 <li>An extensive economic plugin</li>
 <li>With an easy API</li>
 <li>Multiple accounts for each player, customizable!</li>
 <li>More types of <em>"economic entities"</em> can be registered by other plugins</li>
-</ul>
 <blockquote>
-<p>"Economic entities" refers to anything that can receive, own and pay money. Traditionally, only players can do that. With xEcon, everything is possible. An example of non-traditional economic entities is factions in PocketFactions.</p>
+"Economic entities" refers to anything that can receive, own and pay money. Traditionally, only players can do that. With xEcon, everything is possible. An example of non-traditional economic entities is factions in <a href="#PocketFactions">PocketFactions</a>.
 </blockquote>
-
-<ul>
 <li>Economic by-products supported, including shops, sell centres, lands, airports, tax, insurance, casino. All in one plugin. Disable with a switch in the config.</li>
 <li>Accounts can be exported into Microsoft Excel (XML spreadsheet 2003) files!</li>
 <li>Source: <a href="https://github.com/LegendOfMCPE/xEcon">https://github.com/LegendOfMCPE/xEcon</a>
 </li>
 </ul>
 </li>
-<li>PocketFactions
+<li><a name="PocketFactions" class="anchor">PocketFactions</a>
 
 <ul>
-<li>Based on the Bukkit plugin <a href="http://dev.bukkit.org/bukkit-plugins/factions/">Factions</a> by <a href="https://github.com/MassiveCraft" class="user-mention">@MassiveCraft</a> (original source <a href="https://github.com/MassiveCraft/Factions">here</a> )</li>
+<li>Based on the Bukkit plugin <a href="http://dev.bukkit.org/bukkit-plugins/factions/">Factions</a> by <a href="https://github.com/MassiveCraft" class="user-mention">@MassiveCraft</a> (original source <a href="https://github.com/MassiveCraft/Factions">here</a>)</li>
 <li>Allows players to protect their own land whilst an abuse is avoided</li>
 <li>Create a faction with a simple command</li>
 <li>Claim chunks only if you have the money and power to</li>
@@ -109,32 +106,33 @@
 <li>Get more donations from your members to give your faction ccash</li>
 <li>Awesome convenient permission settings to your faction internals</li>
 <li>Inter-factional relationship supported</li>
+<li>Dependencies: <a href="#StatsCore">StatsCore</a> and <a href="#xEcon">xEcon</a></li>
 <li>Source: <a href="https://github.com/LegendOfMCPE/PocketFactions">https://github.com/LegendOfMCPE/PocketFactions</a>
 </li>
 </ul>
 </li>
-<li>EssentialsPE
+<li><a name="EssentialsPE">EssentialsPE</a>
 
 <ul>
-<li>Ports most features from the Bukkit plugin <a href="http://dev.bukkit.org/bukkit-plugins/essentials/">Essentials</a> (original source <a href="https://github.com/essentials/Essentials">here</a> )</li>
+<li>Ports most features from the Bukkit plugin <a href="http://dev.bukkit.org/bukkit-plugins/essentials/">Essentials</a> (original source <a href="https://github.com/essentials/Essentials">here</a>)</li>
 <li>Source: <a href="https://github.com/LegendOfMCPE/EssentailsPE">https://github.com/LegendOfMCPE/EssentailsPE</a>
 </li>
 </ul>
 </li>
-<li>PocketRealisticMulti
+<li><a name="PocketRealisticMulti" class="anchor">PocketRealisticMulti</a>
 
 <ul>
 <li>A lot of realistic functions, separated in there modules composed of even more submodules.</li>
 <li>The physics module contains gravity, sound waves and ropes submodules.</li>
 <li>The biology module contains realistic health, hunger, potions (by overriding the beetroot stew) and other submodules.</li>
 <li>The social module contains permanent death (hardcore pro) and possibly other submodules.</li>
-<li>This plugin has a dependency of StatsCore.</li>
+<li>This plugin has a dependency of <a href="#StatsCore">StatsCore</a>.</li>
 <li>This plugin aims on pushing MCPE to its maximum realism.</li>
 <li>Source: <a href="https://github.com/LegendOfMCPE/PocketRealisticMulti">https://github.com/LegendOfMCPE/PocketRealisticMulti</a>
 </li>
 </ul>
 </li>
-<li>PixelArt-Image
+<li><a name="PixelArt-Image" class="anchor">PixelArt-Image</a>
 
 <ul>
 <li>The core generates a PixelArt image shown to a client (selected clients only, without creating a world).</li>
@@ -150,14 +148,14 @@
 <h3>
 <a name="plugin-compatibility" class="anchor" href="#plugin-compatibility"><span class="octicon octicon-link"></span></a>Plugin compatibility</h3>
 
-<p>We aim to make our plugins compatible to all other plugins. As a result, unless impossible, we will try not to override the features of other plugins. If it is impossible, we will make it possible by using it at our plugins' general API: StatsCore. If a plugin of ours uses a feature that would conflict with other plugins we make, we will update StatsCore so that we won't conflict with ourselves. We would also, if possible, depend on other plugins' databases or APIs to save data, instead of creating more files on your device. For example, PocketRealisticMulti (@LegendOfMCPE/prm) and PocketFactions (@LegendOfMCPE/pocketfactions team) also wants to collect how long the player has been online on the server totally. To avoid wasting your server's precious memory by duplicating saving files, both of these plugins depend on StatsCore to get these statistics.</p>
+<p>We aim to make our plugins compatible to all other plugins. As a result, unless impossible, we will try not to override the features of other plugins. If it is impossible, we will make it possible by using it at our plugins' general API: <a href="#StatsCore">StatsCore</a>. If a plugin of ours uses a feature that would conflict with other plugins we make, we will update <a href="#StatsCore">StatsCore</a> so that we won't conflict with ourselves. We would also, if possible, depend on other plugins' databases or APIs to save data, instead of creating more files on your device. For example, <a href="#PocketRealisticMulti">PocketRealisticMulti</a> and <a href="#PocketFactions">PocketFactions</a> also wants to collect how long the player has been online on the server totally. To avoid wasting your server's precious memory by duplicating saving files, both of these plugins depend on <a href="#StatsCore">StatsCore</a> to get these statistics.</p>
 
-<p>In order to make StatsCore than just an API, you can get data from StatsCore using the commands too.</p>
+<p>In order to make <a href="#StatsCore">StatsCore</a> than just an API, you can get data from <a href="#StatsCore">StatsCore</a> using the commands too.</p>
 
 <h3>
 <a name="copyright-and-credits" class="anchor" href="#copyright-and-credits"><span class="octicon octicon-link"></span></a>Copyright and Credits</h3>
 
-<p>Some of our plugins, like EssentialsPE (@LegendOfMCPE/EssentialsPE) and PocketFactions (@LegendOfMCPE/PocketFactions team) are based on <a href="http://plugins.bukkit.org">Bukkit (@Bukkit) plugins</a>. We would give credit to the original creator who made the Bukkit version of the plugin plus the link to the release of the Bukkit version, but we would also add some features that we think are suitable into these plugins. For example, in PocketFactions, we have an exclusive feature called "sieging" (can be enabled/disabled by server owner), whereas other factions can claim your chunks if your faction has power overdraft. We will <strong>not</strong> specify these exclusive ideas one by one, but we are here to remind you that we are not 100% copying them. Nevertheless, the credit of the idea's original creator will still be given to them.</p>
+<p>Some of our plugins, like EssentialsPE and <a href="#PocketFactions">PocketFactions</a> are based on <a href="http://plugins.bukkit.org">Bukkit (@Bukkit) plugins</a>. We would give credit to the original creator who made the Bukkit version of the plugin plus the link to the release of the Bukkit version, but we would also add some features that we think are suitable into these plugins. For example, in <a href="#PocketFactions">PocketFactions</a>, we have an exclusive feature called "sieging" (can be enabled/disabled by server owner), whereas other factions can claim your chunks if your faction has power overdraft. We will <strong>not</strong> specify these exclusive ideas one by one, but we are here to remind you that we are not 100% copying them. Nevertheless, the credit of the idea's original creator will still be given to them.</p>
       </section>
     </div>
     <footer>
