@@ -1,253 +1,127 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Legend(s)OfMCPE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/cayman.css">
+    <title>Legend of MCPE</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<section class="page-header">
-    <h1 class="project-name">LegendsOfMCPE</h1>
-
-    <h2 class="project-tagline">Aiming to make the best PM plugins!</h2>
-    <a href="https://github.com/LegendOfMCPE" class="btn">GitHub</a>
-    <a href="https://forums.pocketmine.net/members/.11453/" class="btn">PocketMine Forums</a>
-    <a href="https://twitter.com/LegendsOfMCPE" class="btn">Twitter</a>
-</section>
-
-<section class="main-content">
-    <h1>
-        <a name="welcome-to-legendofmcpe-homepage" class="anchor" href="#welcome-to-legendofmcpe-homepage"><span
-                class="octicon octicon-link"></span></a>Welcome to LegendOfMCPE homepage!</h1>
-
-    <h2>
-        <a name="contact-us" class="anchor" href="#contact-us"><span class="octicon octicon-link"></span></a>Contact us
-    </h2>
-
-    <h3>
-        <a name="irc-channel" class="anchor" href="#irc-channel"><span class="octicon octicon-link"></span></a>IRC
-        channel</h3>
-
-    <iframe src="https://kiwiirc.com/client/irc.freenode.org/?nick=LOMCPE|?#LegendOFMCPE"
-            style="border:0; width:100%; height:450px;"></iframe>
-
-    <h3>
-        <a name="our-pocketmine-forums-account" class="anchor" href="#our-pocketmine-forums-account"><span
-                class="octicon octicon-link"></span></a>Our PocketMine Forums account</h3>
-
-    <p><code>LegendsOfMCPE</code>: <a href="http://forums.pocketmine.net/members/.11453/">http://forums.pocketmine.net/members/.11453/</a>
-    </p>
-
-    <h2><a name="blog" class="anchor" href="#blob"><span class="octicon octicon-link"></span></a><a href="blogs.html">Blogs</a>
-    </h2>
-
-    <h2>
-        <a name="our-projects" class="anchor" href="#our-projects"><span class="octicon octicon-link"></span></a>Our
-        projects</h2>
-
-    <h3>
-        <a name="pocketmine-mp-related-tools" class="anchor" href="#pocketmine-mp-related-tools"><span
-                class="octicon octicon-link"></span></a>PocketMine-MP related tools</h3>
-
-    <ul>
-        <li><a name="PocketBot" class="anchor">PocketBot</a>
-
-            <ul>
-                <li>An Android app for joining PocketMine servers as a bot. A feature is to show the "outdated server"
-                    message when joining unless the server installs a plugin that allows a bot.
-                </li>
-                <li>The bot is designed for debugging. It should be able to show debug data visible to a client.</li>
-            </ul>
-        </li>
-        <li><a name="PocketBotPHP" class="anchor">PocketBotPHP</a>
-
-            <ul>
-                <li>Same as <a href="#PocketBot">PocketBot</a> except that it is written in PHP instead of Java</li>
-            </ul>
-        </li>
+	<div id="logo1">
+	<h1 id="logo2"><img id="logo" src="images/LegendOfMcpe.jpg">   Lengend of MCPE<h6>(Lengends of MCPE)</h6></h1>
+	<p>We aim to make our plugins compatible to all other plugins. As a result, unless impossible, we will try not to override the features of other plugins. If it is impossible, we will make it possible by using it at our plugins' general API: StatsCore. If a plugin of ours uses a feature that would conflict with other plugins we make, we will update StatsCore so that we won't conflict with ourselves. We would also, if possible, depend on other plugins' databases or APIs to save data, instead of creating more files on your device. For example, PocketRealisticMulti and PocketFactions also wants to collect how long the player has been online on the server totally. To avoid wasting your server's precious memory by duplicating saving files, both of these plugins depend on StatsCore to get these statistics.In order to make StatsCore than just an API, you can get data from StatsCore using the commands too.</p>
+	</div>
+    <br>
+    <br>
+    <div id="nav1">
+    <ul id="avmenu">
+        <li class="current"><a href="https://github.com/LegendOfMCPE" target="_blank">Github</a></li>
+        <li><a href="https://forums.pocketmine.net/members/.11453/" target="_blank">Pocketmine Forums</a></li>
+        <li><a href="https://twitter.com/LegendsOfMCPE" target="_blank">Twitter</a></li>
+        <li><a href="https://kiwiirc.com/client/irc.freenode.org/?nick=LOMCPE|?#LegendOFMCPE" target="_blank">IRC</a></li>
     </ul>
-    <h3>
-        <a name="pocketmine-mp-zekkou-cake-plugins" class="anchor" href="#pocketmine-mp-zekkou-cake-plugins"><span
-                class="octicon octicon-link"></span></a>PocketMine-MP Zekkou Cake plugins</h3>
+    </div>
+	<div id="bamuel">
+		<a href="https://github.com/Bamuel"><p><img src="images/githubtransparent.jpg"></a> Created by Bamuel</p>
+    </div>
+	
+    <hr width="90%">
+	
+	<div>
+        <div id="logo1">
+		    <h1>Our Projects</h1>
+        </div>
+		<ul id="proj">
+			<li>Dynamic Hub</li>
+			<li>Essentials</li>
+			<li>PocketFactions</li>
+			<li>Hormones</li>
+			<li>Amoeba Server</li>
+			<li>xEcon</li>
+			<li>Oxidizer</li>
+			<li>ClearLagg</li>
+			<li>PocketBot</li>
+			<li>SurvivalGames</li>
+			<li>SlapIt</li>
+			<li>Vault</li>
+			<li>Images-XD</li>
+			<li>HealthBar</li>
+			<li>PVPWorld</li>
+			<li>StatsCore</li>
+			<li>LoM-CMS</li>
+			<li>IRCBot</li>
+			<li>Vehicles</li>
+			<li>PixelArt Image</li>
+			<li>PocketRealisticMulti</li>
+		</ul>
+	</div>
+	
+	<hr width="90%">
+		
+	<div>
+        <div id="logo1">
+		    <h1>Our Team</h1>
+        </div>
+        <div id="team">
+            <a href="https://github.com/64FF00" target="_blank"><img about="64FF00" src="https://avatars1.githubusercontent.com/u/7548474?v=3&s=96"><p>64FF00</p></a>
+            <a href="https://github.com/Bamuel" target="_blank"><img about="Bamuel" src="https://avatars0.githubusercontent.com/u/6744113?v=3&s=96"><p>Bamuel</p></a>
+            <a href="https://github.com/Darunia18" target="_blank"><img about="Darunia18" src="https://avatars2.githubusercontent.com/u/6081050?v=3&s=96"><p>Darunia18</p></a>
+            <a href="https://github.com/DinoKill" target="_blank"><img about="DinoKill" src="https://avatars1.githubusercontent.com/u/6975040?v=3&s=96"><p>DinoKill</p></a>
+            <a href="https://github.com/dutok" target="_blank"><img about="Dutok" src="https://avatars0.githubusercontent.com/u/4838038?v=3&s=96"><p>Dutok</p></a>
+            <a href="https://github.com/Falkirks" target="_blank"><img about="Falkirks" src="https://avatars1.githubusercontent.com/u/5827558?v=3&s=96"><p>Falkirks</p></a>
+            <a href="https://github.com/Georggi" target="_blank"><img about="Georggi" height="96" width="96" src="https://avatars0.githubusercontent.com/u/6255615?v=3&s=96"><p>Yura</p></a>
+            <a href="https://github.com/iJoshuaHD" target="_blank"><img about="iJoshuaHD" src="https://avatars1.githubusercontent.com/u/6231356?v=3&s=96"><p>iJoshuaHD</p></a>
+            <a href="https://github.com/iksaku" target="_blank"><img about="iksaku" src="https://avatars2.githubusercontent.com/u/4632429?v=3&s=96"><p>Jorge Gonzalez</p></a>
+            <a href="https://github.com/jython234" target="_blank"><img about="jython234" src="https://avatars0.githubusercontent.com/u/5985254?v=3&s=96"><p>jython234</p></a>
+            <a href="https://github.com/LDX-MCPE" target="_blank"><img about="LDX-MCPE" src="https://avatars0.githubusercontent.com/u/3160400?v=3&s=96"><p>Luke Darling</p></a>
+            <a href="https://github.com/onebone" target="_blank"><img about="onebone" src="https://avatars2.githubusercontent.com/u/3233503?v=3&s=96"><p>onebone</p></a>
+            <a href="https://github.com/PEMapModder" target="_blank"><img about="PEMapModder" src="https://avatars3.githubusercontent.com/u/5618466?v=3&s=96"><p>PEMapModder</p></a>
+            <a href="https://github.com/wiez" target="_blank"><img about="wiez" src="https://avatars2.githubusercontent.com/u/4592319?v=3&s=96"><p>Wies</p></a>
+        </div>
+    </div>
+	
+	<hr width="90%">
+	
+	<div>
+        <div id="logo1">
+		<h1>Copyright and Credits</h1>
+		<p>Some of our plugins, like EssentialsPE and PocketFactions are based on Bukkit plugins. We would give credit to the original creator who made the Bukkit version of the plugin plus the link to the release of the Bukkit version, but we would also add some features that we think are suitable into these plugins. For example, in PocketFactions, we have an exclusive feature called "sieging" (can be enabled/disabled by server owner), whereas other factions can claim your chunks if your faction has power overdraft. We will not specify these exclusive ideas one by one, but we are here to remind you that we are not 100% copying them. Nevertheless, the credit of the idea's original creator will still be given to them.</p>
+        </div>
+    </div>
+	
+	<hr width="90%">
 
-    <ul>
-        <li><a name="StatsCore" class="anchor">StatsCore</a>
-
-            <ul>
-                <li>A central API for other plugins, used for recording statistics of players and providing APIs like
-                    the request API.
-                </li>
-                <li>It also has its own commands, such as the player total online time and other statistics.</li>
-                <li>Dependency for <a href="#PocketFactions">PocketFactions</a> and <a href="#PocketRealisticMulti">PocketRealisticMulti</a>.
-                </li>
-                <li>Source: <a href="https://github.com/LegendOfMCPE/StatsCore">https://github.com/LegendOfMCPE/StatsCore</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <p><a name="xEcon" class="anchor">xEcon</a></p>
-
-            <ul>
-                <li>An extensive economic plugin</li>
-                <li>With an easy API</li>
-                <li>Multiple accounts for each player, customizable!</li>
-                <li>More types of <em>"economic entities"</em> can be registered by other plugins</li>
-                <blockquote>
-                    "Economic entities" refers to anything that can receive, own and pay money. Traditionally, only
-                    players can do that. With xEcon, everything is possible. An example of non-traditional economic
-                    entities is factions in <a href="#PocketFactions">PocketFactions</a>.
-                </blockquote>
-                <li>Economic by-products supported, including shops, sell centres, lands, airports, tax, insurance,
-                    casino. All in one plugin. Disable with a switch in the config.
-                </li>
-                <li>Accounts can be exported into Microsoft Excel (XML spreadsheet 2003) files!</li>
-                <li>Source: <a href="https://github.com/LegendOfMCPE/xEcon">https://github.com/LegendOfMCPE/xEcon</a>
-                </li>
-            </ul>
-        </li>
-        <li><a name="PocketFactions" class="anchor">PocketFactions</a>
-
-            <ul>
-                <li>Based on the Bukkit plugin <a href="http://dev.bukkit.org/bukkit-plugins/factions/">Factions</a> by
-                    <a href="https://github.com/MassiveCraft" class="user-mention">MassiveCraft</a> (original source <a
-                            href="https://github.com/MassiveCraft/Factions">here</a>)
-                </li>
-                <li>Allows players to protect their own land whilst an abuse is avoided</li>
-                <li>Create a faction with a simple command</li>
-                <li>Claim chunks only if you have the money and power to</li>
-                <li>Get more members to increase your faction's power</li>
-                <li>Get more donations from your members to give your faction ccash</li>
-                <li>Awesome convenient permission settings to your faction internals</li>
-                <li>Inter-factional relationship supported</li>
-                <li>Dependencies: <a href="#StatsCore">StatsCore</a> and <a href="#xEcon">xEcon</a></li>
-                <li>Source: <a href="https://github.com/LegendOfMCPE/PocketFactions">https://github.com/LegendOfMCPE/PocketFactions</a>
-                </li>
-            </ul>
-        </li>
-        <li><a name="EssentialsPE">EssentialsPE</a>
-            <ul>
-                <li>Ports most features from the Bukkit plugin <a
-                        href="http://dev.bukkit.org/bukkit-plugins/essentials/">Essentials</a> (original source <a
-                        href="https://github.com/essentials/Essentials">here</a>)
-                </li>
-                <li>Source: <a href="https://github.com/LegendOfMCPE/EssentialsPE">https://github.com/LegendOfMCPE/EssentialsPE</a>
-                </li>
-            </ul>
-        </li>
-        <li><a name="HealthBar" class="anchor">HealthBar</a>
-            <ul>
-                <li>Allow to see how many health a player has, it's shown above their head with the player name</li>
-                <li>The position of the bar and the nick can be modified putting it <i>above</i>, <i>under</i>, at the
-                    <i>left</i> or <i>right</i> of the player name
-                </li>
-                <li>Source: <a href="https://github.com/LegendOfMCPE/HealthBar">https://github.com/LegendOfMCPE/HealthBar</a>
-                </li>
-            </ul>
-        </li>
-        <li><a name="PocketRealisticMulti" class="anchor">PocketRealisticMulti</a>
-            <ul>
-                <li>A lot of realistic functions, separated in there modules composed of even more submodules.</li>
-                <li>The physics module contains gravity, sound waves and ropes submodules.</li>
-                <li>The biology module contains realistic health, hunger, potions (by overriding the beetroot stew) and
-                    other submodules.
-                </li>
-                <li>The social module contains permanent death (hardcore pro) and possibly other submodules.</li>
-                <li>This plugin has a dependency of <a href="#StatsCore">StatsCore</a>.</li>
-                <li>This plugin aims on pushing MCPE to its maximum realism.</li>
-                <li>Source: <a href="https://github.com/LegendOfMCPE/PocketRealisticMulti">https://github.com/LegendOfMCPE/PocketRealisticMulti</a>
-                </li>
-            </ul>
-        </li>
-        <li><a name="SurvivalGames" class="anchor">SurvivalGames</a>
-
-            <ul>
-                <li>A minigane plugin mainly developed by Dinokiller (<a href="https://github.com/DinoKill"
-                                                                         class="user-mention">DinoKill</a> on GitHub).
-                </li>
-                <li>Player's first go into the lobby where they wait for other players and vote for a map to be used for
-                    the game.
-                </li>
-                <li>Once the game begins, will then spawn around chests each containing useful items.</li>
-                <li>Using the resources you have, you can fight with other people within the arena.</li>
-                <li>If you are killed you have the option of ethier leaving or spectating the game.</li>
-                <li>When the amount of alive players gets low enough or enough time passes, deathmatch will commence!
-                </li>
-                <li>During deathmatch you are restricted to being in spawn only. Trying to escape could lose you
-                    precious health!
-                </li>
-                <li>The winner is the last one standing. If you happen to have an economy plugin you might be rewarded
-                    money.
-                </li>
-                <li>Source: <a href="https://github.com/LegendOfMCPE/SurvivalGames">https://github.com/LegendOfMCPE/SurvivalGames</a>
-                </li>
-            </ul>
-        </li>
-        <li><a name="PixelArt-Image" class="anchor">PixelArt-Image</a>
-
-            <ul>
-                <li>The core generates a PixelArt image shown to a client (selected clients only, without creating a
-                    world).
-                </li>
-                <li>An add on is to show pictures downloaded from HTTP.</li>
-                <li>Another add-on may be a forced captcha to avoid bots.</li>
-                <li>Source: <a href="https://github.com/LegendOfMCPE/PixelArt-Image">https://github.com/LegendOfMCPE/PixelArt-Image</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2><a name="our-principles-of-plugin-development" class="anchor" href="#our-principles-of-plugin-development"><span
-            class="octicon octicon-link"></span></a>Our Principles of Plugin Development</h2>
-
-    <h3>
-        <a name="plugin-compatibility" class="anchor" href="#plugin-compatibility"><span
-                class="octicon octicon-link"></span></a>Plugin compatibility</h3>
-
-    <p>We aim to make our plugins compatible to all other plugins. As a result, unless impossible, we will try not to
-        override the features of other plugins. If it is impossible, we will make it possible by using it at our
-        plugins' general API: <a href="#StatsCore">StatsCore</a>. If a plugin of ours uses a feature that would conflict
-        with other plugins we make, we will update <a href="#StatsCore">StatsCore</a> so that we won't conflict with
-        ourselves. We would also, if possible, depend on other plugins' databases or APIs to save data, instead of
-        creating more files on your device. For example, <a href="#PocketRealisticMulti">PocketRealisticMulti</a> and <a
-                href="#PocketFactions">PocketFactions</a> also wants to collect how long the player has been online on
-        the server totally. To avoid wasting your server's precious memory by duplicating saving files, both of these
-        plugins depend on <a href="#StatsCore">StatsCore</a> to get these statistics.</p>
-
-    <p>In order to make <a href="#StatsCore">StatsCore</a> than just an API, you can get data from <a href="#StatsCore">StatsCore</a>
-        using the commands too.</p>
-
-    <h3>
-        <a name="copyright-and-credits" class="anchor" href="#copyright-and-credits"><span
-                class="octicon octicon-link"></span></a>Copyright and Credits</h3>
-
-    <p>Some of our plugins, like <a href="#EssentialsPE">EssentialsPE</a> and <a
-            href="#PocketFactions">PocketFactions</a> are based on <a href="https://github.com/Bukkit/Bukkit" class="user-mention">Bukkit</a><a href="http://plugins.bukkit.org">&nbsp;plugins</a>. We would give credit to the original creator who made
-        the Bukkit version of the plugin plus the link to the release of the Bukkit version, but we would also add some
-        features that we think are suitable into these plugins. For example, in <a
-                href="#PocketFactions">PocketFactions</a>, we have an exclusive feature called "sieging" (can be
-        enabled/disabled by server owner), whereas other factions can claim your chunks if your faction has power
-        overdraft. We will <strong>not</strong> specify these exclusive ideas one by one, but we are here to remind you
-        that we are not 100% copying them. Nevertheless, the credit of the idea's original creator will still be given
-        to them.</p>
-    <h2><a name="join-our-team" class="anchor" href="#downloads"><span class="octicon octicon-link"></span></a>Join our team</h2>
-
-    <script type="text/javascript" id="rbox-loader-script">
-        if(!window._rbox){
-            _rbox = { host_protocol:document.location.protocol, ready:function(cb){this.onready=cb;} };
-            (function(d, e) {
-                var s, t, i, src=['/static/client-src-served/widget/36606/rbox_api.js', '/static/client-src-served/widget/36606/rbox_impl.js'];
-                t = d.getElementsByTagName(e); t=t[t.length - 1];
-                for(i=0; i<src.length; i++) {
-                    s = d.createElement(e); s.src = _rbox.host_protocol + '//w.recruiterbox.com' + eval("src" + String.fromCharCode(91) + String(i) + String.fromCharCode(93));
-                    t.parentNode.insertBefore(s, t.nextSibling);
-                }})(document, 'script');
-        }
+    <div id="logo1">
+        <h1><a name="join-our-team" class="anchor" href="#downloads"><span class="octicon octicon-link"></span></a>Join our team</h1>
+        <script type="text/javascript" id="rbox-loader-script">
+            if(!window._rbox){
+                _rbox = { host_protocol:document.location.protocol, ready:function(cb){this.onready=cb;} };
+                (function(d, e) {
+                    var s, t, i, src=['/static/client-src-served/widget/36606/rbox_api.js', '/static/client-src-served/widget/36606/rbox_impl.js'];
+                    t = d.getElementsByTagName(e); t=t[t.length - 1];
+                    for(i=0; i<src.length; i++) {
+                        s = d.createElement(e); s.src = _rbox.host_protocol + '//w.recruiterbox.com' + eval("src" + String.fromCharCode(91) + String(i) + String.fromCharCode(93));
+                        t.parentNode.insertBefore(s, t.nextSibling);
+                    }})(document, 'script');
+            }
     </script>
-
-</section>
-
+    </div>
 </body>
 </html>
