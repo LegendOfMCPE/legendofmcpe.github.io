@@ -46,17 +46,18 @@ div#nav1 {
     text-align: center;
 }
 li{
-    list-style: inside;
+    list-style: inside square;
 }
 ul#proj {
+    text-align: center;
     columns: 3;
     -webkit-columns: 3;
     -moz-columns: 3;
 }
 div#team {
-    columns: 5;
-    -webkit-columns: 5;
-    -moz-columns: 5;
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
     text-align: center;
 }
 img {
