@@ -1,69 +1,143 @@
-body {
-  padding-top: 100px;
-  background: #fff url(http://i.imgur.com/iPEjHXT.png) repeat-x center 0px;
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+*{
+    margin: 0;
+    padding: 0;
 }
-img#logo {
-    width: 100px;
-    height: 100px;
+*:before, *:after{
+    box-sizing: border-box;
 }
-div#logo1 {
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
+body{
+    background: #fff url(../images/wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #666;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 2px;
+    margin: auto;
+    max-width: 70%;
 }
-p {
-    font-family: Comfortaa;
-    font-size: 14px;
+a{
+    color: inherit;
+    text-decoration: none;
+}
+p{
+    font-size: 14pt;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.5;
 }
-h1#logo2 {
-    font-family: "Merienda One"
-}
-div#bamuel {
-    opacity: 0.3;
-}
-ul#avmenu {
-    margin: 35px 0;
-    padding: 0;
-    font: 20px Comfortaa;
-    list-style-type: none;
-}
-ul#avmenu li {
-    display: inline-block;
-    list-style-type: none;
-}
-ul#avmenu li a {
-    padding: 5px 10px;
-    border: 1px solid #aaa;
-    background-color: #eee;
-    color: #47a;
-    text-decoration: none;
-}
-div#nav1 {
-    text-align: center;
+ul{
+    list-style: none;
+    margin: 8px 0;
 }
 li{
-    list-style: inside square;
-}
-ul#proj {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    color: #666;
+    display: inline-block;
+    font-size: 14pt;
+    margin: 4px 0;
     text-align: center;
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
+    transition: 0.2s background ease, 0.2s transform ease;
 }
-div#team {
-    columns: 4;
-    -webkit-columns: 4;
-    -moz-columns: 4;
-    text-align: center;
+li:hover{
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(0.97);
 }
-img {
-    border-radius: 10%;
+h1{
+    font-size: 24pt;
+    margin: 12px 0;
 }
-a {
-    text-decoration: none;
-    color: #4477aa;
+div{
+    margin-bottom: 32px;
+}
+#logo{
+    border-radius: 0 0 25px 25px;
+    display: block;
+    height: auto;
+    width: 200px;
+}
+#logo2{
+    font-size: 42pt;
+    margin-top: 40px;
+}
+#avmenu{
+    font-size: 16pt;
+    list-style-type: none;
+    margin: 35px 0;
+}
+#avmenu a, #proj a{
+    display: block;
+    padding: 9px 18px;
+}
+#team{
+    margin: auto;
+}
+#team a{
+    display: inline-block;
+    padding: 16px;
+}
+#team li{
+    border-radius: 4px;
+    display: inline-block;
+}
+#team img{
+    border-radius: 50%;
+    height: auto;
+    margin-top: 12px;
+    width: 96px;
+}
+#team span{
+    display: block;
+    margin-top: 8px;
+}
+#footer a{
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.2s background ease;
+}
+#footer a:hover{
+    background: rgba(255, 255, 255, 0.95);
+}
+#footer li{
+    border: 0;
+    border-left: 1px solid #888;
+    border-radius: 0;
+    line-height: 0.85;
+    padding-left: 8px;
+}
+#footer li:hover{
+    background: none;
+    transform: none;
+}
+#footer li:first-child{
+    border: 0;
+    padding: 0;
+}
+@media screen and (max-width: 736px){
+    body{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        max-width: 90%;
+    }
+    li{
+        display: block;
+        width: 100%;
+    }
+    #team a{
+        display: block;
+    }
+    #team li{
+        margin-top: 4px;
+    }
+    #footer li:not(:first-child){
+        border: 0;
+        margin: 0;
+        margin-top: 8px;
+        padding: 0;
+    }
 }

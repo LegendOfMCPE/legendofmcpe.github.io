@@ -1,128 +1,116 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Legend of MCPE</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="images/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-	<div id="logo1">
-	<h1 id="logo2"><img id="logo" src="http://i.imgur.com/b3og0aC.jpg">   Legend of MCPE<h6>(Legends of MCPE)</h6></h1>
-	<p>We aim to make our plugins compatible to all other plugins. As a result, unless impossible, we will try not to override the features of other plugins. If it is impossible, we will make it possible by using it at our plugins' general API: StatsCore. If a plugin of ours uses a feature that would conflict with other plugins we make, we will update StatsCore so that we won't conflict with ourselves. We would also, if possible, depend on other plugins' databases or APIs to save data, instead of creating more files on your device. For example, PocketRealisticMulti and PocketFactions also wants to collect how long the player has been online on the server totally. To avoid wasting your server's precious memory by duplicating saving files, both of these plugins depend on StatsCore to get these statistics.In order to make StatsCore than just an API, you can get data from StatsCore using the commands too.</p>
-	</div>
-    <br>
-    <br>
-    <div id="nav1">
-    <ul id="avmenu">
-        <li class="current"><a href="https://github.com/LegendOfMCPE" target="_blank">Github</a></li>
-        <li><a href="https://forums.pmmp.io/members/legendsofmcpe.399/" target="_blank">New Pocketmine Forums</a></li>
-        <li><a href="https://forums.pocketmine.net/members/.11453/" target="_blank">Old Pocketmine Forums</a></li>
-        <li><a href="https://twitter.com/LegendsOfMCPE" target="_blank">Twitter</a></li>
-        <li><a href="https://kiwiirc.com/client/irc.freenode.org/?nick=LOMCPE|?#LegendOFMCPE" target="_blank">IRC</a></li>
-    </ul>
-    </div>
-	<div id="bamuel">
-		<a href="https://github.com/Bamuel"><p><img src="images/githubtransparent.jpg"></a> Created by Bamuel</p>
-    </div>
-	
-    <hr width="90%">
-	
-	<div>
+    <head>
+        <title>Legends of MCPE</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="images/favicons/manifest.json">
+    </head>
+    <body>
         <div id="logo1">
-		    <h1>Our Projects</h1>
+            <img id="logo" src="https://i.imgur.com/b3og0aC.jpg">
+            <h1 id="logo2">Legends of MCPE</h1>
+            <p>We aim to make our plugins compatible with all other plugins. As a result, unless impossible, we will try not to override the features of other plugins. If it is impossible, we will make it possible by using it at our plugins' general API: StatsCore. If a plugin of ours uses a feature that would conflict with other plugins we make, we will update StatsCore so that we won't conflict with ourselves. We would also, if possible, depend on other plugins' databases or APIs to save data, instead of creating more files on your device. For example, PocketRealisticMulti and PocketFactions also wants to collect how long the player has been online on the server totally. To avoid wasting your server's precious memory by duplicating saving files, both of these plugins depend on StatsCore to get these statistics.In order to make StatsCore than just an API, you can get data from StatsCore using the commands too.</p>
         </div>
-		<ul id="proj">
-			<li>Dynamic Hub</li>
-			<li>Essentials</li>
-			<li>PocketFactions</li>
-			<li>Hormones</li>
-			<li>Amoeba Server</li>
-			<li>xEcon</li>
-			<li>Oxidizer</li>
-			<li>ClearLagg</li>
-			<li>PocketBot</li>
-			<li>SurvivalGames</li>
-			<li>SlapIt</li>
-			<li>Vault</li>
-			<li>Images-XD</li>
-			<li>HealthBar</li>
-			<li>PVPWorld</li>
-			<li>StatsCore</li>
-			<li>LoM-CMS</li>
-			<li>IRCBot</li>
-			<li>Vehicles</li>
-			<li>PixelArt Image</li>
-			<li>PocketRealisticMulti</li>
-		</ul>
-	</div>
-	
-	<hr width="90%">
-		
-	<div>
+        <div id="nav1">
+            <ul id="avmenu">
+                <li class="current"><a href="https://github.com/LegendOfMCPE" target="_blank">GitHub</a></li>
+                <li><a href="https://forums.pmmp.io/members/legendsofmcpe.399/" target="_blank">PMMP Forums</a></li>
+                <li><a href="https://forums.pocketmine.net/members/legendsofmcpe.11453/" target="_blank">PocketMine Forums</a></li>
+                <li><a href="https://twitter.com/LegendsOfMCPE" target="_blank">Twitter</a></li>
+                <li><a href="https://kiwiirc.com/client/irc.freenode.org/?nick=LOMCPE|?#LegendOFMCPE" target="_blank">IRC</a></li>
+            </ul>
+        </div>
+        <div>
+            <div id="logo1">
+                <h1>Our Projects</h1>
+            </div>
+            <ul id="proj">
+                <li><a href="https://github.com/LegendOfMCPE/DynamicHub" target="_blank">DynamicHub</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/EssentialsPE" target="_blank">EssentialsPE</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/PocketFactions" target="_blank">PocketFactions</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/Hormones" target="_blank">Hormones</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/Amoeba" target="_blank">Amoeba</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/xEcon" target="_blank">xEcon</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/Oxidizer" target="_blank">Oxidizer</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/ClearLagg" target="_blank">ClearLagg</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/PocketBot" target="_blank">PocketBot</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/SlapIt" target="_blank">SlapIt</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/Vault" target="_blank">Vault</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/HealthBar" target="_blank">HealthBar</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/PVPWorld" target="_blank">PVPWorld</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/StatsCore" target="_blank">StatsCore</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/LoM-CMS" target="_blank">LoM-CMS</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/IRCBot" target="_blank">IRCBot</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/Vehicles" target="_blank">Vehicles</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/PixelArt-Image" target="_blank">PixelArt Image</a></li>
+                <li><a href="https://github.com/LegendOfMCPE/PocketRealisticMulti" target="_blank">PocketRealisticMulti</a></li>
+            </ul>
+        </div>
+        <div>
+            <div id="logo1">
+                <h1>Our Team</h1>
+            </div>
+            <div id="team">
+                <li><a href="https://github.com/64FF00" target="_blank"><img about="64FF00" src="https://avatars1.githubusercontent.com/u/7548474?v=3&s=96"><span>64FF00</span></a></li>
+                <li><a href="https://github.com/Bamuel" target="_blank"><img about="Bamuel" src="https://avatars0.githubusercontent.com/u/6744113?v=3&s=96"><span>Bamuel</span></a></li>
+                <li><a href="https://github.com/Darunia18" target="_blank"><img about="Darunia18" src="https://avatars2.githubusercontent.com/u/6081050?v=3&s=96"><span>Darunia18</span></a></li>
+                <li><a href="https://github.com/DinoKill" target="_blank"><img about="Dinokiller" src="https://avatars1.githubusercontent.com/u/6975040?v=3&s=96"><span>Dinokiller</span></a></li>
+                <li><a href="https://github.com/dutok" target="_blank"><img about="Dutok" src="https://avatars0.githubusercontent.com/u/4838038?v=3&s=96"><span>dutok</span></a></li>
+                <li><a href="https://github.com/Falkirks" target="_blank"><img about="Falkirks" src="https://avatars1.githubusercontent.com/u/5827558?v=3&s=96"><span>Falkirks</span></a></li>
+                <li><a href="https://github.com/Georggi" target="_blank"><img about="Georggi" src="https://avatars0.githubusercontent.com/u/6255615?v=3&s=96"><span>Yura</span></a></li>
+                <li><a href="https://github.com/ifvictr" target="_blank"><img about="ifvictr" src="https://avatars2.githubusercontent.com/u/10110245?v=3&s=96"><span>ifvictr</span></a></li>
+                <li><a href="https://github.com/iJoshuaHD" target="_blank"><img about="iJoshuaHD" src="https://avatars1.githubusercontent.com/u/6231356?v=3&s=96"><span>iJoshuaHD</span></a></li>
+                <li><a href="https://github.com/iksaku" target="_blank"><img about="iksaku" src="https://avatars2.githubusercontent.com/u/4632429?v=3&s=96"><span>iksaku</span></a></li>
+                <li><a href="https://github.com/LDX-MCPE" target="_blank"><img about="LDX-MCPE" src="https://avatars0.githubusercontent.com/u/3160400?v=3&s=96"><span>LDX</span></a></li>
+                <li><a href="https://github.com/onebone" target="_blank"><img about="onebone" src="https://avatars2.githubusercontent.com/u/3233503?v=3&s=96"><span>onebone</span></a></li>
+                <li><a href="https://github.com/PEMapModder" target="_blank"><img about="PEMapModder" src="https://avatars3.githubusercontent.com/u/5618466?v=3&s=96"><span>PEMapModder</span></a></li>
+                <li><a href="https://github.com/Sandertv" target="_blank"><img about="SanderTV" src="https://avatars0.githubusercontent.com/u/16114089?v=3&s=96"><span>SanderTV</span></a></li>
+                <li><a href="https://github.com/SOF3" target="_blank"><img about="Sofe" src="https://avatars3.githubusercontent.com/u/19623715?v=3&s=96"><span>SOFe</span></a></li>
+                <li><a href="https://github.com/wiez" target="_blank"><img about="wiez" src="https://avatars2.githubusercontent.com/u/4592319?v=3&s=96"><span>wiez</span></a></li>
+            </div>
+        </div>
         <div id="logo1">
-		    <h1>Our Team</h1>
+            <h1>Copyright and Credits</h1>
+            <p>Some of our plugins, like EssentialsPE and PocketFactions, are based off of Bukkit plugins. We would give credit to the original creator who made the Bukkit version of the plugin plus the link to the release of the Bukkit version, but we would also add some features that we think are suitable into these plugins. For example, in PocketFactions, we have an exclusive feature called "sieging" (can be enabled/disabled by server owner), whereas other factions can claim your chunks if your faction has power overdraft. We will not specify these exclusive ideas one by one, but we are here to remind you that we are not 100% copying them. Nevertheless, the credit of the idea's original creator will still be given to them.</p>
         </div>
-        <div id="team">
-            <a href="https://github.com/64FF00" target="_blank"><img about="64FF00" src="https://avatars1.githubusercontent.com/u/7548474?v=3&s=96"><p>64FF00</p></a>
-            <a href="https://github.com/Bamuel" target="_blank"><img about="Bamuel" src="https://avatars0.githubusercontent.com/u/6744113?v=3&s=96"><p>Bamuel</p></a>
-            <a href="https://github.com/Darunia18" target="_blank"><img about="Darunia18" src="https://avatars2.githubusercontent.com/u/6081050?v=3&s=96"><p>Darunia18</p></a>
-            <a href="https://github.com/DinoKill" target="_blank"><img about="DinoKill" src="https://avatars1.githubusercontent.com/u/6975040?v=3&s=96"><p>DinoKill</p></a>
-            <a href="https://github.com/dutok" target="_blank"><img about="Dutok" src="https://avatars0.githubusercontent.com/u/4838038?v=3&s=96"><p>Dutok</p></a>
-            <a href="https://github.com/Falkirks" target="_blank"><img about="Falkirks" src="https://avatars1.githubusercontent.com/u/5827558?v=3&s=96"><p>Falkirks</p></a>
-            <a href="https://github.com/Georggi" target="_blank"><img about="Georggi" height="96" width="96" src="https://avatars0.githubusercontent.com/u/6255615?v=3&s=96"><p>Yura</p></a>
-            <a href="https://github.com/ifvictr" target="_blank"><img about="ifvictr" src="https://avatars2.githubusercontent.com/u/10110245?v=3&s=96"><p>ifvictr</p></a>
-            <a href="https://github.com/iJoshuaHD" target="_blank"><img about="iJoshuaHD" src="https://avatars1.githubusercontent.com/u/6231356?v=3&s=96"><p>iJoshuaHD</p></a>
-            <a href="https://github.com/iksaku" target="_blank"><img about="iksaku" src="https://avatars2.githubusercontent.com/u/4632429?v=3&s=96"><p>Jorge Gonzalez</p></a>
-            <a href="https://github.com/LDX-MCPE" target="_blank"><img about="LDX-MCPE" src="https://avatars0.githubusercontent.com/u/3160400?v=3&s=96"><p>Luke Darling</p></a>
-            <a href="https://github.com/onebone" target="_blank"><img about="onebone" src="https://avatars2.githubusercontent.com/u/3233503?v=3&s=96"><p>onebone</p></a>
-            <a href="https://github.com/PEMapModder" target="_blank"><img about="PEMapModder" src="https://avatars3.githubusercontent.com/u/5618466?v=3&s=96"><p>PEMapModder</p></a>
-            <a href="https://github.com/Sandertv" target="_blank"><img about="SanderTV" src="https://avatars0.githubusercontent.com/u/16114089?v=3&s=96"><p>SanderTV</p></a>
-            <a href="https://github.com/SOF3" target="_blank"><img about="Sofe" src="https://avatars3.githubusercontent.com/u/19623715?v=3&s=96"><p>SOFe</p></a>
-            <a href="https://github.com/wiez" target="_blank"><img about="wiez" src="https://avatars2.githubusercontent.com/u/4592319?v=3&s=96"><p>Wies</p></a>
+        <div id="logo1">
+            <h1><a name="join-our-team" class="anchor" href="#downloads"><span class="octicon octicon-link"></span></a>Join Our Team</h1>
+            <script type="text/javascript" id="rbox-loader-script">
+                if(!window._rbox){
+                    _rbox = { host_protocol:document.location.protocol, ready:function(cb){this.onready=cb;}};
+                    (function(d, e) {
+                        var s, t, i, src=['/static/client-src-served/widget/36606/rbox_api.js', '/static/client-src-served/widget/36606/rbox_impl.js'];
+                        t = d.getElementsByTagName(e); t=t[t.length - 1];
+                        for(i=0; i<src.length; i++) {
+                            s = d.createElement(e); s.src = _rbox.host_protocol + '//w.recruiterbox.com' + eval("src" + String.fromCharCode(91) + String(i) + String.fromCharCode(93));
+                            t.parentNode.insertBefore(s, t.nextSibling);
+                        }
+                    })(document, 'script');
+                }
+            </script>
         </div>
-    </div>
-	
-	<hr width="90%">
-
-    <div id="logo1">
-		<h1>Copyright and Credits</h1>
-		<p>Some of our plugins, like EssentialsPE and PocketFactions are based on Bukkit plugins. We would give credit to the original creator who made the Bukkit version of the plugin plus the link to the release of the Bukkit version, but we would also add some features that we think are suitable into these plugins. For example, in PocketFactions, we have an exclusive feature called "sieging" (can be enabled/disabled by server owner), whereas other factions can claim your chunks if your faction has power overdraft. We will not specify these exclusive ideas one by one, but we are here to remind you that we are not 100% copying them. Nevertheless, the credit of the idea's original creator will still be given to them.</p>
-    </div>
-	
-	<hr width="90%">
-
-    <div id="logo1">
-        <h1><a name="join-our-team" class="anchor" href="#downloads"><span class="octicon octicon-link"></span></a>Join our team</h1>
-        <script type="text/javascript" id="rbox-loader-script">
-            if(!window._rbox){
-                _rbox = { host_protocol:document.location.protocol, ready:function(cb){this.onready=cb;} };
-                (function(d, e) {
-                    var s, t, i, src=['/static/client-src-served/widget/36606/rbox_api.js', '/static/client-src-served/widget/36606/rbox_impl.js'];
-                    t = d.getElementsByTagName(e); t=t[t.length - 1];
-                    for(i=0; i<src.length; i++) {
-                        s = d.createElement(e); s.src = _rbox.host_protocol + '//w.recruiterbox.com' + eval("src" + String.fromCharCode(91) + String(i) + String.fromCharCode(93));
-                        t.parentNode.insertBefore(s, t.nextSibling);
-                    }})(document, 'script');
-            }
-    </script>
-    </div>
-</body>
+        <div id="footer">
+            <ul>
+                <li>&copy; 2014-2016 LegendsOfMCPE</li>
+                <li>Created by <a href="https://ifvictr.com" target="_blank">ifvictr</a></li>
+            </ul>
+        </div>
+    </body>
 </html>
