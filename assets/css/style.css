@@ -3,14 +3,15 @@
     margin: 0;
     padding: 0;
 }
-*:before, *:after{
+*, *:before, *:after{
     box-sizing: border-box;
 }
 body{
-    background: #fff url(../images/wallpaper.jpg);
+    background-color: #ffffff;
+    background-image: url(/images/wallpaper.jpg);
     background-position: center;
     background-size: cover;
-    color: #666;
+    color: #666666;
     font-family: Raleway, sans-serif;
     letter-spacing: 2px;
     margin: auto;
@@ -19,6 +20,13 @@ body{
 a{
     color: inherit;
     text-decoration: none;
+}
+div:not(:last-of-type){
+    margin-bottom: 32px;
+}
+h1{
+    font-size: 24pt;
+    margin: 12px 0;
 }
 p{
     font-size: 14pt;
@@ -31,74 +39,48 @@ ul{
     list-style: none;
     margin: 8px 0;
 }
-li{
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    color: #666;
-    display: inline-block;
-    font-size: 14pt;
-    margin: 4px 0;
-    text-align: center;
-    transition: 0.2s background ease, 0.2s transform ease;
-}
-li:hover{
-    background: rgba(255, 255, 255, 0.25);
-    transform: scale(0.97);
-}
-h1{
-    font-size: 24pt;
-    margin: 12px 0;
-}
-div{
-    margin-bottom: 32px;
-}
 #logo{
     border-radius: 0 0 25px 25px;
     display: block;
     height: auto;
     width: 200px;
 }
-#logo2{
+#main{
     font-size: 42pt;
     margin-top: 40px;
 }
-#avmenu{
-    font-size: 16pt;
-    list-style-type: none;
-    margin: 35px 0;
-}
-#avmenu a, #proj a{
+#externals a, #projects a{
     display: block;
     padding: 9px 18px;
 }
-#team{
-    margin: auto;
-}
-#team a{
+#members a{
     display: inline-block;
-    padding: 16px;
+    padding: 12px;
 }
-#team li{
+#members li{
     border-radius: 4px;
     display: inline-block;
+    width: 19%;
 }
-#team img{
+#members img{
     border-radius: 50%;
     height: auto;
     margin-top: 12px;
     width: 96px;
 }
-#team span{
+#members span{
     display: block;
     margin-top: 8px;
 }
-#footer a{
+p a, #footer a{
     background: rgba(255, 255, 255, 0.5);
-    transition: 0.2s background ease;
+    border: 2px solid transparent;
+    padding: 0 4px;
+    transition: 0.2s background ease, 0.2s border ease;
 }
-#footer a:hover{
-    background: rgba(255, 255, 255, 0.95);
+p a:hover, #footer a:hover{
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 #footer li{
     border: 0;
@@ -106,6 +88,7 @@ div{
     border-radius: 0;
     line-height: 0.85;
     padding-left: 8px;
+    text-align: left;
 }
 #footer li:hover{
     background: none;
@@ -115,9 +98,27 @@ div{
     border: 0;
     padding: 0;
 }
+.blocks li{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    color: #666666;
+    display: inline-block;
+    font-size: 14pt;
+    margin: 4px 0;
+    text-align: center;
+    transition: 0.2s background ease, 0.2s transform ease;
+}
+.blocks li:hover{
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(0.97);
+}
 @media screen and (max-width: 736px){
     body{
         max-width: 80%;
+    }
+    #members li{
+        width: 48%;
     }
 }
 @media screen and (max-width: 480px){
@@ -128,10 +129,10 @@ div{
         display: block;
         width: 100%;
     }
-    #team a{
+    #members a{
         display: block;
     }
-    #team li{
+    #members li{
         margin-top: 4px;
     }
     #footer li:not(:first-child){
